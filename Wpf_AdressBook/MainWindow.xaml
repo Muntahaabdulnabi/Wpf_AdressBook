@@ -20,12 +20,12 @@
         </Grid>
 
         <StackPanel Grid.Column="0">
-            <TextBlock Text="Förnamn"/>
-            <TextBox/>
-            <TextBlock Text="Efternamn"/>
-            <TextBox/>
-            <TextBlock Text="E-postadress"/>
-            <TextBox/>
+            <TextBlock Text="Förnamn" Style="{StaticResource label}"/>
+            <TextBox Style="{StaticResource field}"/>
+            <TextBlock Text="Efternamn" Style="{StaticResource label}"/>
+            <TextBox Style="{StaticResource field}"/>
+            <TextBlock Text="E-postadress" Style="{StaticResource label}"/>
+            <TextBox Style="{StaticResource field}"/>
 
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -35,18 +35,19 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel Grid.Column="0">
-                    <TextBlock Text="Gatunamn"/>
-                    <TextBox/>
+                    <TextBlock Text="Gatunamn" Style="{StaticResource label}"/>
+                    <TextBox Style="{StaticResource field}"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="1">
                     <TextBlock Text="Postnummer"
-                              Margin="10 0"/>
-                    <TextBox/>
+                               Style="{StaticResource label}"
+                               />
+                    <TextBox Margin="5 0" Style="{StaticResource field}"/>
                 </StackPanel>
                 <StackPanel Grid.Column="2">
-                    <TextBlock Text="Ort"/>
-                    <TextBox/>
+                    <TextBlock Text="Ort" Style="{StaticResource label}"/>
+                    <TextBox Style="{StaticResource field}"/>
                 </StackPanel>
             </Grid>
         </StackPanel>
